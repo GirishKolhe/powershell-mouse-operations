@@ -16,8 +16,9 @@ It was that moement, I decided to build collection of utilities that would give 
 ## Notes
 > In case of "cannot be loaded because running scripts is disabled on this system" error, use below command
 > open console and excute below commands
-> powershell -ExecutionPolicy RemoteSigned .\get_mouse_position.ps1
-> powershell.exe  -ExecutionPolicy RemoteSigned -file mouse_drag.ps1 -appname 'Untitled - Paint' -startX 274 -startY 289 -pixels  "400-500-200-400-100-600-1000-300"
+> >> powershell -ExecutionPolicy RemoteSigned .\get_mouse_position.ps1
+>
+> >> powershell.exe  -ExecutionPolicy RemoteSigned -file mouse_drag.ps1 -appname 'Untitled - Paint' -startX 274 -startY 289 -pixels  "400-500-200-400-100-600-1000-300"
 
-###Keywords
+### Keywords
 > powershell winAPI user32.dll mouseevents

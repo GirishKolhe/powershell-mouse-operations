@@ -66,10 +66,8 @@ Function MouseMove($AUT, $startX, $startY, $pixelsCordinates)
 	for ($i=0; $i -lt $pixels.length; $i+=2) {
 		[MouseMove_Ops.AutoInvoke]::SetCursorPos($pixels[$i],$pixels[$i+1])  | Out-Null
 		sleep -Seconds 1
-
 	}
 	[MouseMove_Ops.AutoInvoke]::LeftUP()
-
 }
 
 MouseMove $appname $startX $startY $pixels

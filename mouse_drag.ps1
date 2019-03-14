@@ -63,10 +63,10 @@ Function MouseMove($AUT, $startX, $startY, $pixelsCordinates)
 
 	$pixels = $pixelsCordinates.split("-")
 	[MouseMove_Ops.AutoInvoke]::LeftDWN()
-	for ($i=0; $i -lt $pixels.length; $i++) {
+	for ($i=0; $i -lt $pixels.length; $i+=2) {
 		[MouseMove_Ops.AutoInvoke]::SetCursorPos($pixels[$i],$pixels[$i+1])  | Out-Null
 		sleep -Seconds 1
-		$i++
+
 	}
 	[MouseMove_Ops.AutoInvoke]::LeftUP()
 
